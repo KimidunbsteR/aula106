@@ -1,34 +1,17 @@
-// Script para Definir se a pessoa é um mono Darius de responsa
+let lancesDeEscada = Number(prompt('Quantos lances de escada você gostaria?'));
 
-/*
-let nomeDoUsuario = ('Qual o seu nome?');
-let mainChamp = prompt('Qual o seu personagem principal?');
-let fragKDA = prompt('Quantos inimigos, você matou em sequência hoje?');
-let monoDarius = ('Você é um mono Darius de respeito!');
+while(isNaN(lancesDeEscada)) {
+    lancesDeEscada = Number(prompt(`Você digitou ${lancesDeEscada}. O programa só aceita valores numéricos nessa etapa. Por favor, digite quantos lances de escada você gostaria`));
+}
 
-if (monoDarius){
-    alert('Você tem um ótimo bom gosto cara.');
-}
-else if (String(nomeDoUsuario) = 'Darius' && Number(fragKDA) >=6) {
-    alert('Assim, você deveria rever os seus conceitos...');
-}
-else {
-    alert('Cara, que decepção!');
-}
-*/
+let material = prompt('Qual o material da sua escada?');
+let desenho = '';
 
-let aluno = prompt('Qual o nome do aluno?');
-let materia = prompt('Qual o nome da matéria?');
-let nota = prompt('E qual foi a nota?');
+let i = 0;
 
-let media = 7;
+while (i < lancesDeEscada) {
+    desenho = desenho + material;
+    console.log(desenho);
 
-if (Number(nota) >= media) {
-    alert(`Parabéns, o aluno ${aluno} foi aprovado na matéria ${materia}!`);
-}
-else if (Number(nota) >= media - 0.5) {
-    alert(`O aluno ${aluno} foi aprovado na matéria ${materia} pelo sistema!`);
-}
-else {
-    alert (`Parece que a nota do aluno ${aluno} na matéria ${materia} foi insuficiente`);
+    i ++
 }
